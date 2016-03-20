@@ -1,6 +1,6 @@
 # react-fitted-image
 
-Pictures are always difficult to handle in web page, especially in a responsive way. A well-known workaround is to style the <img /> with something like this:
+Pictures are always difficult to handle in web page, especially in a responsive way. A well-known workaround is to style the img tag with something like this:
 ```css
 img {
   max-width: 100%;
@@ -41,7 +41,7 @@ npm install --save react-fitted-image
 ```
 
 You'll also have to include the CSS or SCSS file in your project.
-See example for more details.
+See example to get more details.
 
 ## Development
 Clone the repository:
@@ -54,8 +54,9 @@ cd react-fitted-image && npm install
 ```
 Commands:
 ```shell
-npm run build 	# build the lib to publish the package
-npm run example # build the example
-npm run test	  # run the tests
-npm run lint    # lint the code
+npm run lib       # build the lib
+npm run example   # build the example
+npm run test      # run the tests
+npm run lint      # lint the code
+npm run build 	  # run lint, test, and lib in order to publish the package
 ```
