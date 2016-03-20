@@ -1,0 +1,5 @@
+lib
+example/build
+node_modules
+__tests__
+__mocks__

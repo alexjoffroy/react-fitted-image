@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+		.App {
+      margin: auto;
+      padding: .5rem 0;
+      max-width: 50rem;
+			height: 100vh;
+      display: flex;
+      flex-direction: column;
+		}
+    .Settings {
+      margin-bottom: .5rem;
+      display: flex;
+      flex-direction: row;
+    }
+    .Settings > label {
+      flex: 1;
+    }
+    .Settings > select {
+      flex: 4;
+    }
+    .Wrapper {
+      border: 1px solid #ddd;
+      height: 90%;
+    }
+    .Loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+	</style>
+	<link rel="stylesheet" type="text/css" href="../lib/react-fitted-image.css"/>
+</head>
+<body>
+	<div id="app"></div>
+    <script src="build/index.js"></script>
+</body>
+</html>
