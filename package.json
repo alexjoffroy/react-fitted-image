@@ -1,7 +1,7 @@
 {
-  "author": "Alexandre Joffroy (the-cormoran)",
+  "author": "Alexandre Joffroy (alexjoffroy)",
   "bugs": {
-    "url": "https://github.com/the-cormoran/react-fitted-image/issues"
+    "url": "https://github.com/alexjoffroy/react-fitted-image/issues"
   },
   "description": "React component for image handling with object-fit",
   "dependencies": {
@@ -51,6 +51,10 @@
   "peerDependencies": {
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/alexjoffroy/react-fitted-image.git"
   },
   "scripts": {
     "prepublish": "npm run build",
