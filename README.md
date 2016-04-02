@@ -15,6 +15,9 @@ In addition, you can provide a loader which will be displayed during the image p
 
 Object-fit is well supported by browsers but not all of them for now ( see [Caniuse](http://caniuse.com/#feat=object-fit) ). To work on stuffs like IE, a basic test is done with [CSS.supports](https://developer.mozilla.org/en/docs/Web/API/CSS/supports) to provide a fallback based on "background" CSS property.
 
+## Demo
+http://alexjoffroy.github.io/react-fitted-image/example/
+
 ## Usage
 
 ### Install
