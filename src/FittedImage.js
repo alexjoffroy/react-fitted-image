@@ -23,7 +23,9 @@ const FittedImage = React.createClass({
     fit: React.PropTypes.oneOf(['auto', 'contain', 'cover']),
     loader: React.PropTypes.element,
     src: React.PropTypes.string.isRequired,
-    style: React.PropTypes.object
+    style: React.PropTypes.object,
+    onLoad: React.PropTypes.func,
+    onError: React.PropTypes.func
   },
 
   /* Lifecycle */
@@ -32,7 +34,9 @@ const FittedImage = React.createClass({
     return {
       background: false,
       fit: 'auto',
-      style: {}
+      style: {},
+      onLoad: () => {},
+      onError: () => {}
     };
   },
 
@@ -103,12 +107,20 @@ const FittedImage = React.createClass({
     this.setState({
       status: states.LOADED
     });
+
+    if (background || !modern) {
+      this.props.onLoad();
+    }
   },
 
   _onLoadError() {
     this.setState({
       status: states.DEAD
     });
+
+    if (background || !modern) {
+      this.props.onError();
+    }
   }
 
 });
