@@ -78,7 +78,7 @@ const FittedImage = React.createClass({
   },
 
   _getImage() {
-    const { background, src, ...props } = this.props;
+    const { background, src, onLoad, onError, ...props } = this.props;
     if ( !background && modern ) {
       return <img {...props} src={src} className={ this._getClassName(false) } />;
     } else {
@@ -108,9 +108,7 @@ const FittedImage = React.createClass({
       status: states.LOADED
     });
 
-    if (background || !modern) {
-      this.props.onLoad();
-    }
+    this.props.onLoad();
   },
 
   _onLoadError() {
@@ -118,9 +116,7 @@ const FittedImage = React.createClass({
       status: states.DEAD
     });
 
-    if (background || !modern) {
-      this.props.onError();
-    }
+    this.props.onError();
   }
 
 });
