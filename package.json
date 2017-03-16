@@ -49,8 +49,8 @@
   "main": "lib/react-fitted-image.js",
   "name": "react-fitted-image",
   "peerDependencies": {
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react": "15.4.x",
+    "react-dom": "15.4.x"
   },
   "repository" : {
     "type" : "git",
