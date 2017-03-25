@@ -32,16 +32,23 @@ npm install --save react-fitted-image
 | className      | string | Custom classname for the component | _ | no |
 | fit            | string | Value of the object-fit property. Can be "auto", "contain", or "cover" | "auto" | no |
 | loader         | element | Component to use as loader | _ | no |
+| onLoad         | function | Success callback for image loading | _ | no |
+| onError        | function | Error callback for image loading | _ | no |
 | src            | string | Image url to render | _ | yes |
 | style          | object | Custom styles | {} | no |
 
 ### Example
+
 ```javascript
 <FittedImage
   fit="contain"
   loader={<div>Loading</div>}
+  onLoad={(...args) => console.log(...args)}
+  onError={(...args) => console.log(...args)}
   src="public/img.jpg" />
 ```
+
+### Styles
 
 You'll also have to include the CSS or SCSS file in your project.
 See example to get more details.
