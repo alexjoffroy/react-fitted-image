@@ -78,7 +78,7 @@ const FittedImage = React.createClass({
   },
 
   _getImage() {
-    /* eslint disable-no-unused-vars */
+    /* eslint-disable no-unused-vars */
     const { background, src, onLoad, onError, ...props } = this.props;
 
     if ( !background && modern ) {
