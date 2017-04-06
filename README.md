@@ -56,7 +56,7 @@ See example to get more details.
 ## Development
 Clone the repository:
 ```
-git clone https://github.com/the-cormoran/react-fitted-image.git
+git clone https://github.com/alexjoffroy/react-fitted-image.git
 ```
 Install dependencies:
 ```
