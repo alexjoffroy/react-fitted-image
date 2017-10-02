@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import loadImage from './utils/loadImage.js';
 import './FittedImage.scss';
@@ -18,14 +19,14 @@ const FittedImage = React.createClass({
   displayName: 'FittedImage',
 
   propTypes: {
-    background: React.PropTypes.bool,
-    className: React.PropTypes.string,
-    fit: React.PropTypes.oneOf(['auto', 'contain', 'cover']),
-    loader: React.PropTypes.element,
-    src: React.PropTypes.string.isRequired,
-    style: React.PropTypes.object,
-    onLoad: React.PropTypes.func,
-    onError: React.PropTypes.func
+    background: PropTypes.bool,
+    className: PropTypes.string,
+    fit: PropTypes.oneOf(['auto', 'contain', 'cover']),
+    loader: PropTypes.element,
+    src: PropTypes.string.isRequired,
+    style: PropTypes.object,
+    onLoad: PropTypes.func,
+    onError: PropTypes.func
   },
 
   /* Lifecycle */
