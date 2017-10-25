@@ -5,6 +5,7 @@ import { renderIntoDocument } from 'react-addons-test-utils';
 const component = '../src/FittedImage.js';
 jest.unmock(component);
 jest.unmock('classnames');
+jest.unmock('prop-types');
 
 const FittedImage = require(component);
 
