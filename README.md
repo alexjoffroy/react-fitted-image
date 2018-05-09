@@ -1,3 +1,7 @@
+<a href="https://www.npmjs.com/package/react-fitted-image"><img src="https://img.shields.io/npm/dt/react-fitted-image.svg" alt="Total Downloads"></a>
+<a href="https://github.com/alexjoffroy/react-fitted-image/releases"><img src="https://img.shields.io/npm/v/react-fitted-image.svg" alt="Latest Release"></a>
+<a href="https://github.com/alexjoffroy/react-fitted-image/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-fitted-image.svg" alt="License"></a>
+
 # react-fitted-image
 
 Pictures are always difficult to handle in web page, especially in a responsive way. A well-known workaround is to style the img tag with something like this:
