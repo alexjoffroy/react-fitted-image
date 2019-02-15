@@ -80,7 +80,7 @@ const FittedImage = React.createClass({
 
   _getImage() {
     /* eslint-disable no-unused-vars */
-    const { background, fit, src, onLoad, onError, ...props } = this.props;
+    const { background, fit, src, loader, onLoad, onError, ...props } = this.props;
 
     if ( !background && modern ) {
       return <img {...props} src={src} className={ this._getClassName(false) } />;
