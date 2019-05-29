@@ -1,0 +1,25 @@
+.FittedImage {
+  width: 100%;
+  height: 100%;
+}
+
+.FittedImage--contain {
+  object-fit: contain;
+}
+
+.FittedImage--cover {
+  object-fit: cover;
+}
+
+.FittedImage--background {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.FittedImage--background .FittedImage--contain {
+  background-size: contain;
+}
+
+.FittedImage--background .FittedImage--cover {
+  background-size: cover;
+}

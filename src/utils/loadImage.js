@@ -1,21 +1,13 @@
-import { defer } from 'q';
-
-function loadImage(url) {
-  const deferred = defer();
-
-  let image = new Image();
-
-  image.onload = () => {
-    deferred.resolve();
-  };
-
-  image.onerror = () => {
-    deferred.reject(new Error('Error when loading ' + url));
+export default function loadImage(url) {
+    return new Promise((resolve, reject) => {
+  
+      let image = new Image()
+    
+      image.onload = resolve
+    
+      image.onerror = () => reject(new Error('Error when loading ' + url))
+    
+      image.src = url;
+  
+    })
   }
-
-  image.src = url;
-
-  return deferred.promise;
-}
-
-module.exports = loadImage;
