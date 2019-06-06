@@ -11,7 +11,7 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -24,6 +24,7 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "babel-runtime": "^6.26.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "nwb": "0.23.x",

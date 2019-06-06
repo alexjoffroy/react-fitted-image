@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import FittedImage from '../../src'
+import FittedImage from '../../lib'
 
 import './index.css'
 
