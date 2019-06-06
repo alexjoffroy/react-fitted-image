@@ -1,6 +1,6 @@
 {
   "name": "react-fitted-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for image handling with object-fit",
   "main": "lib/index.js",
   "module": "es/index.js",
